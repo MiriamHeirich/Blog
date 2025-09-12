@@ -1,24 +1,25 @@
 <?php
 $produtos = [
+
     ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
     'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
                    programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
     'link'=> "primeiros-passos-com-spring.html"        
-    ]
+    ],
 
     ['titulo'=> " O que é Metodologia Ágil",
      'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
                    programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
      'link'=> "primeiros-passos-com-spring.html"        
-    ]
+    ],
     
-     ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
+    ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
       'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
                    programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
       'link'=> "primeiros-passos-com-spring.html"        
     ]
 
-]
+];
 
 
 ?>

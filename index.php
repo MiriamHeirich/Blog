@@ -1,7 +1,22 @@
 <?php
 $produtos = [
-    'nome'=> "Cerol",
-    'descricao'=> "teste"
+    ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
+    'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
+                   programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
+    'link'=> "primeiros-passos-com-spring.html"        
+    ]
+     ['titulo'=> "  O que é Metodologia Ágil?
+            </a>",
+    'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
+                   programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
+    'link'=> "primeiros-passos-com-spring.html"        
+    ]
+     ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
+    'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
+                   programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
+    'link'=> "primeiros-passos-com-spring.html"        
+    ]
+
 ]
 
 
@@ -20,16 +35,18 @@ $produtos = [
 
 <body>
     <div id="container">
-        <h1>Meu Blog</h1>
+        <h1>Meu Blog - Miriam</h1>
         <h2>
             <a href="primeiros-passos-com-spring.html">
-                Primeiros passos com Spring
+            <p>
+               <?php
+                echo $produtos['titulo']."<br>";
+                echo $produtos['conteudo'];
+               ?>
+            </p>
             </a>
         </h2>
-        <p>
-            Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
-            programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.
-        </p>
+      
         <h2>
             <a href="o-que-e-metodologia-agil.html">
                 O que é Metodologia Ágil?

@@ -1,30 +1,3 @@
-<?php
-$produtos = [
-
-    ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
-    'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
-                   programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
-    'link'=> "primeiros-passos-com-spring.html"        
-    ],
-
-    ['titulo'=> " O que é Metodologia Ágil",
-     'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
-                   programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
-     'link'=> "primeiros-passos-com-spring.html"        
-    ],
-    
-    ['titulo'=> "PRIMEIROS PASSOS COM SPRINT",
-      'conteudo'=> "Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
-                   programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.",
-      'link'=> "primeiros-passos-com-spring.html"        
-    ]
-
-];
-
-
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,35 +11,37 @@ $produtos = [
 <body>
     <div id="container">
         <h1>Meu Blog - Miriam</h1>
-        <h2>
-            <a href="primeiros-passos-com-spring.html">
+    
+    </div>    
             <p>
                <?php
-                echo $produtos['titulo']."<br>";
-                echo $produtos['conteudo'];
-               ?>
-            </p>
-            </a>
-        </h2>
+            $artigos= [
+                [
+                'titulo'=>(strtoupper('PRIMEIROS PASSOS COM SPRINT') ),
+                'conteudo'=> 'Na empresa onde trabalho começamos um Coding Dojo, que é basicamente uma reunião com programadores e
+                              programadoras a fim de resolver desafios e aperfeiçoar as habilidades com algoritmos.',
+                'link'=>'primeiros-passos-com-spring.html'],
+            
+                ['titulo'=>(strtoupper('O que é Metodologia Ágil?') ),
+                'conteudo'=> '  Uma vez fui contratada por uma empresa que desenvolvia softwares e aplicativos para outras empresas.',
+                'link'=>"o-que-e-metodologia-agil.html"],
+            
+                ['titulo'=>(strtoupper('Como é o funil do Growth Hacking?')),
+                'conteudo'=>'Minha amiga que possui um clube de assinaturas começou a utilizar o Growth Hacking após conhecer um pouco
+                            mais sobre ele.',
+                'link'=>"como-e-o-funil-do-growth-hacking.html"]];
+            
+
+            foreach($artigos as $Artigo){
+                echo $Artigo['titulo']."<br>";
+                echo $Artigo['conteudo']."<br>";
+                echo $Artigo['link']."<br>";}
+          
+              
+     
+       
+       ?>
+     
       
-        <h2>
-            <a href="o-que-e-metodologia-agil.html">
-                O que é Metodologia Ágil?
-            </a>
-        </h2>
-        <p>
-            Uma vez fui contratada por uma empresa que desenvolvia softwares e aplicativos para outras empresas.
-        </p>
-        <h2>
-            <a href="como-e-o-funil-do-growth-hacking.html">
-                Como é o funil do Growth Hacking?
-            </a>
-        </h2>
-        <p>
-            Minha amiga que possui um clube de assinaturas começou a utilizar o Growth Hacking após conhecer um pouco
-            mais sobre ele.
-        </p>
-    </div>
-</body>
 
 </html>
